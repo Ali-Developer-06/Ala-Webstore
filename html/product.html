@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!--? ========== Navbar Section ========== -->
+
+<section>
+    <nav class="navbar">
+        <a href="../index.html" class="brending">Logo</a>
+        <ul class="nav_menu">
+            <li class="li nav_item">
+                <a href="./product.html" class="nav_link"><i class="ri-box-1-fill"></i>Product</a>
+            </li>
+            <li class="li_input nav_item">
+                <input type="text" placeholder="Search here...">
+                <i class="ri-search-line"></i>
+            </li>
+            <li class="li nav_item">
+                <a href="#" class="nav_link"><i class="ri-account-circle-fill"></i>Account</a>
+            </li>
+            <li class="li nav_item">
+                <a href="../html/winkelwagentje.html" class="nav_link"><i class="ri-shopping-cart-fill"></i>Shopping Cart</a>
+            </li>
+            <li class="li nav_item">
+                <a href="./login.html" target="_blank" class="nav_link"><i class="ri-contacts-fill"></i> Contact</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</section>
+
+<!--? ========== Product Slider Section ========== -->
+
+<div class="productSlider">
+    <h1>Populaire Producten</h1>
+    <div class="products">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../images/airpod.jpg" alt="">
+                <h2>APPLE AirPods</h2>
+                <p>€189.00</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/samsung.jpg" alt="">
+                <h2>Samsung</h2>
+                <p>€649.99</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/iphone12.jpg" alt="">
+                <h2>IPHONE 12</h2>
+                <p>€749.00</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/samsung s8.jpg" alt="">
+                <h2>SAMSUNG S8</h2>
+                <p>€369.00</p>
+            </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </div>
+</div>
+
+<!--? ========== Product Cards Section ========== -->
+
+<div class="productCards">
+    <h1>Alle Producten</h1>
+    <div id="product-list"></div>
+</div>
+
+    <!--? ==========Footer Section ========== -->
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-item">
+                <h2>Website Name</h2>
+                <span>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit Mole <br> stias accusantium dicta cupiditate</span>
+            </div>
+            <div class="footer-item">
+                <h2>Support</h2>
+                <p>Stockholm, Sweden</p>
+                <a href="mailto:MediaShop@email.nl">MediaShop@gmail.com</a>
+                <p>+31 042 345 6729</p>
+            </div>
+            <div class="footer-item">
+                <h2>Account</h2>
+                <a href="#">Dashboard</a>
+                <a href="login.html">Sign Up</a>
+                <a href="login.html">Login</a>
+            </div>
+            <div class="footer-item">
+                <h2>Quick Link</h2>
+                <p>Privacy Policy</p>
+                <p>Contact</p>
+                <p>FAQ's</p>
+            </div>
+        </div>
+    </footer>
+
+<!--* ========== Javascript Links ========== -->
+
+<!--? ===== Swiper JS Links ===== -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        autoplay: true,
+        loop: true,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    });
+</script>
+
+<!--? ===== JS pages Links ===== -->
+<script src="addToProduct.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>
